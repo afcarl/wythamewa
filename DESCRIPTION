@@ -4,7 +4,7 @@ Title: Parus major social learning analysis
 Version: 1.00
 Date: 2015-07-21
 Author: Richard McElreath
-Maintainer: Richard McElreath <mcelreath@ucdavis.edu>
+Maintainer: Richard McElreath <richard_mcelreath@eva.mpg.de>
 Depends: rstan, rethinking
 Description: Data and models for Parus major social learning analysis
 License: GPL (>= 3)
