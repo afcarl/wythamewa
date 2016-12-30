@@ -52,14 +52,16 @@ ewa_def <- function(model,prior,data,file,pars,start,link=c("logit","logit","log
         data <- dat
     }
 
-    start <- list(
-        mu = rep(0,dat$N_effects),
-        sigma_bird = rep(0.5,dat$N_veffects),
-        z_bird = matrix(0,ncol=dat$N_birds,nrow=dat$N_veffects),
-        L_Rho_bird = diag(dat$N_veffects),
-        diff_hi = 1,
-        b_age = rep(0,dat$N_effects)
-    )
+    if (missing(start)) {
+        start <- list(
+            mu = rep(0,dat$N_effects),
+            sigma_bird = rep(0.5,dat$N_veffects),
+            z_bird = matrix(0,ncol=dat$N_birds,nrow=dat$N_veffects),
+            L_Rho_bird = diag(dat$N_veffects),
+            diff_hi = 1,
+            b_age = rep(0,dat$N_effects)
+        )
+    }
 
     # build per-individual versions of linear models, for generated quantities
     # need to replace bird[i] with individual index values j
@@ -98,7 +100,8 @@ ewa_def <- function(model,prior,data,file,pars,start,link=c("logit","logit","log
     model_text <- x
 
     # parameters to sample
-    pars <- c( "mu", "b_age", "diff_hi", "sigma_bird", "Rho_bird", "a_bird", "log_lik", "ks", "kg", "kl", "kp" , "kpx" )
+    if (missing(pars))
+        pars <- c( "mu", "b_age", "diff_hi", "sigma_bird", "Rho_bird", "a_bird", "log_lik", "ks", "kg", "kl", "kp" , "kpx" )
 
     # build result suitable to pass to ewa_fit
     result <- list(
