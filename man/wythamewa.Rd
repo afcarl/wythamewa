@@ -11,8 +11,8 @@
   \tabular{ll}{
     Package: \tab wythamewa\cr
     Type: \tab Package\cr
-    Version: \tab 1\cr
-    Date: \tab 10 July 2015\cr
+    Version: \tab 1.03\cr
+    Date: \tab 25 July 2017\cr
     License: \tab GPL-3 \cr
   }
   
@@ -29,7 +29,7 @@
   Richard McElreath
 }
 \references{
-  Aplin, L and McElreath, R. 2017. Conformity does not perpetuate maladaptive traditions in a wild population of songbirds.
+  Aplin, L. and B. Sheldon and R. McElreath. 2017. Conformity does not perpetuate maladaptive traditions in a wild population of songbirds. doi: 10.1073/pnas.1621067114
 }
 
 \examples{}  
