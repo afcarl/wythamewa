@@ -1,7 +1,7 @@
 wythamewa
 ==========
 
-This package contains models and data to replicate the payoff and frequency dependent social learning analysis of the Aplin & McElreath 2017 Wytham Woods Parus major data with unequal payoffs.
+This package contains models and data to replicate the payoff and frequency dependent social learning analysis of the Aplin, Sheldon, McElreath 2017, "Conformity does not perpetuate suboptimal traditions in a wild population of songbirds" (doi: 10.1073/pnas.1621067114).
 
 See ``?wythamewa`` for a quick start guide to replicating the analysis and figures in the paper.
 
